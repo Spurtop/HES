@@ -13,10 +13,13 @@ header {
 }
 
 .banner {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Ensures it stretches full width */
+    max-height: 300px; /* Adjust this height if needed */
+    object-fit: cover; /* Prevents distortion */
     display: block;
+    margin: 0 auto;
 }
+
 
 nav {
     background: #444;
