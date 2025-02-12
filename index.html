@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENT_NAME - Real Estate & Estates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>AGENT_NAME</h1>
+        <p>Real Estate & Estate Sales</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#listings">Listings</a>
+        <a href="#contact">Contact</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+
+    <section id="about">
+        <h2>About AGENT_NAME</h2>
+        <p>Welcome to my real estate and estate sales page. Whether you're looking for your dream home or need assistance with estate sales, I'm here to help.</p>
+        <div class="socials">
+            <a href="https://facebook.com/YOUR_FACEBOOK_PAGE" target="_blank">Facebook</a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank">Instagram</a>
+            <a href="mailto:your@email.com">Email Me</a>
+        </div>
+    </section>
+
+    <section id="listings">
+        <h2>Latest Listings & Estate Sales</h2>
+        <div class="fb-container">
+            <div class="fb-page" 
+                data-href="https://facebook.com/YOUR_FACEBOOK_PAGE"
+                data-tabs="timeline"
+                data-width="500"
+                data-height="600"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📍 Your Location</p>
+        <p>📞 Call: (123) 456-7890</p>
+        <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
+
+        <h3>Send a Message</h3>
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="subscribe">
+        <h2>Subscribe for Updates</h2>
+        <p>Sign up to receive the latest estate sale listings and real estate updates.</p>
+        <form action="https://YOUR_MAILCHIMP_URL" method="POST">
+            <input type="email" name="EMAIL" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AGENT_NAME | Designed by YOU</p>
+    </footer>
+
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0">
+    </script>
+
+</body>
+</html>
