@@ -13,12 +13,14 @@ header {
 }
 
 .banner {
-    width: 100%;  /* Stretches full width */
-    max-height: 450px; /* Ensures it doesn't take up too much space */
-    object-fit: contain; /* Prevents cropping */
+    width: 100%; /* Stretches across the full width */
+    height: auto; /* Maintains correct aspect ratio */
+    max-height: 450px; /* Prevents it from being too large */
+    object-fit: scale-down; /* Ensures full image is visible without cropping */
     display: block;
     margin: 0 auto;
 }
+
 
 
 
