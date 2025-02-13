@@ -21,7 +21,7 @@
 
     <section id="about">
         <h2>About Scotty Hicks</h2>
-        <p>Serving **Northwest Georgia & Northwest Alabama**, I specialize in real estate, auctions, and estate sales, helping clients with seamless property transitions and successful sales.</p>
+        <p>Serving <strong>Northwest Georgia & Northwest Alabama</strong>, I specialize in real estate, auctions, and estate sales, helping clients with seamless property transitions and successful sales.</p>
         <div class="socials">
             <a href="https://www.facebook.com/profile.php?id=100064334311709" target="_blank">Facebook</a>
             <a href="mailto:Scottysells@gmail.com">Email Me</a>
@@ -34,8 +34,8 @@
             <div class="fb-page" 
                 data-href="https://www.facebook.com/profile.php?id=100064334311709"
                 data-tabs="timeline"
-                data-width="500"
-                data-height="600"
+                data-width="100%"
+                data-height="800"
                 data-small-header="false"
                 data-adapt-container-width="true"
                 data-hide-cover="false"
@@ -72,9 +72,22 @@
         <p>&copy; 2025 Scotty Hicks | Serving Northwest Georgia & Northwest Alabama</p>
     </footer>
 
-    <!-- Facebook SDK -->
-    <script async defer crossorigin="anonymous" 
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0">
+    <!-- Facebook SDK Script (Ensures Proper Loading) -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v12.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
 </body>
