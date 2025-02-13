@@ -13,13 +13,12 @@ header {
 }
 
 .banner {
-    width: 100%; /* Ensures full width */
-    max-height: 450px; /* Keeps it from being too large */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: contain; /* Prevents cropping */
+    width: 100%; /* Stretches full width */
+    height: auto; /* Keeps aspect ratio */
     display: block;
     margin: 0 auto;
 }
+
 
 
 
